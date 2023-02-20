@@ -1,0 +1,18 @@
+.button-project {
+	display: block;
+	margin: 0 auto;
+	padding: 0.5rem 0.8rem;
+	font-size: 15px;
+	border: none;
+	border-radius: 3px;
+	background-color: rgb(47, 98, 240);
+	color: #fff;
+}
+
+.hide ~ * {
+	display: none;
+}
+
+.show ~ * {
+	display: block;
+}

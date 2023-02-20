@@ -1,0 +1,31 @@
+@import url('../../src/App.css');
+
+.container-sidebar {
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	top: (0 - var(--main-nav-height));
+	width: 250px;
+	max-width: 25em;
+	height: 100vh;
+	margin: auto;
+	border: 0.2em solid black;
+	padding: 1em;
+	transition: transform 500ms ease-in-out;
+}
+
+.sidebar-navigation {
+	display: flex;
+	flex-direction: column;
+	transition: 0.2s transform;
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+}
+
+.active {
+	transform: translateX(0);
+}
