@@ -1,0 +1,12 @@
+/*abstracts*/
+@use "./abstracts/variables";
+@use "./abstracts/mixins";
+
+/*base*/
+@use "./base/base";
+@use "./base/resets";
+
+@use "./components/Home";
+@use "./components/LoginOAuthGoogle";
+@use "./components/Project";
+@use "./components/Sidebar";

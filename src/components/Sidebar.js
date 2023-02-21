@@ -1,8 +1,8 @@
 import React from 'react';
 import Project from './Project';
 import useFecth from '../../src/hooks/useFecth';
-import '../../src/App.css';
-import '../styles/Sidebar.css';
+import '../styles/scss/App.scss';
+// import '../styles/scss/components/Sidebar.scss';
 
 const Sidebar = ({ peticion, style }) => {
 	const [projects, error] = useFecth(peticion);

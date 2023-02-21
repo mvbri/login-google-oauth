@@ -1,6 +1,6 @@
 import React from 'react';
-import '../../../src/App.css';
-import '../../styles/Home.css';
+import '../../styles/scss/App.scss';
+// import '../../styles/scss/components/Home.scss';
 import Sidebar from '../Sidebar';
 import { useState } from 'react';
 
@@ -22,7 +22,7 @@ const Home = () => {
 						<button
 							onClick={() => showMenu()}
 							id='menu-btn'
-							className='ml-1 link'
+							className='ml-1 link btn-menu'
 						>
 							Menu
 						</button>
@@ -30,7 +30,7 @@ const Home = () => {
 				</ul>
 			</nav>
 			<Sidebar
-				style={{ width: showSidebar ? '0' : '300px' }}
+				style={{ right: showSidebar ? '0' : '-300px' }}
 				peticion='projects'
 			/>
 		</div>

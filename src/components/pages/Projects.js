@@ -1,7 +1,7 @@
 import React from 'react';
 import Project from '../Project';
 import useFecth from '../../hooks/useFecth';
-import '../../../src/App.css';
+import '../../styles/scss/App.scss';
 
 const Projects = ({ peticion }) => {
 	const [projects, error] = useFecth(peticion);

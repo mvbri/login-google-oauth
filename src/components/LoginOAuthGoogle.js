@@ -1,6 +1,5 @@
 import React from 'react';
 import { GoogleLogin } from '@react-oauth/google';
-import '../styles/LoginOAuthGoogle.css';
 import { useNavigate } from 'react-router-dom';
 
 function LoginOAuthGoogle() {

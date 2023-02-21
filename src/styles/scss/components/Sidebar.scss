@@ -1,4 +1,3 @@
-@import url('../../src/App.css');
 
 .container-sidebar {
 	overflow: hidden;
@@ -11,7 +10,7 @@
 	margin: auto;
 	border: 0.2em solid black;
 	padding: 1em;
-	transition: transform 500ms ease-in-out;
+	transition: right 500ms ease-in-out;
 }
 
 .sidebar-navigation {
