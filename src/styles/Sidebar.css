@@ -2,7 +2,7 @@
 
 .container-sidebar {
 	overflow: hidden;
-	position: absolute;
+	position: fixed;
 	right: 0;
 	top: (0 - var(--main-nav-height));
 	width: 250px;
