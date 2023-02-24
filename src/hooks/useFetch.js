@@ -10,7 +10,7 @@ const useFecth = (endpoint) => {
 			.get(`${process.env.REACT_APP_URL_API}${endpoint}`)
 			.then(({ data }) => setData(data))
 			.catch((err) => setError(err));
-	}, [endpoint]);
+	}, []);
 	return [data, error];
 };
 

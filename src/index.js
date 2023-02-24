@@ -2,13 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { GoogleOAuthProvider } from '@react-oauth/google';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import LoginOAuthGoogle from './components/LoginOAuthGoogle';
+import Login from './components/Login';
 import Home from './components/pages/Home';
+import '../src/styles/index.css';
 
 const router = createBrowserRouter([
 	{
 		path: '/',
-		element: <LoginOAuthGoogle />,
+		element: <Login />,
 		errorElement: <h1>404</h1>,
 	},
 	{
