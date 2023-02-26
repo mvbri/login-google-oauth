@@ -1,6 +1,6 @@
 import React from 'react';
 import Project from '../Project';
-import useFecth from '../../hooks/useFecth';
+import useFecth from '../../hooks/useFetch';
 import '../../styles/scss/App.scss';
 
 const Projects = ({ peticion }) => {

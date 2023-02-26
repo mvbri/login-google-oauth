@@ -1,7 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
 import '../styles/scss/App.scss';
-// import '../styles/scss/components/Projects.scss';
 
 const Proyect = ({ id, projectName, dev, languages, company }) => {
 	const [start, setStart] = useState(false);
