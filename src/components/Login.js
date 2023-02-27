@@ -27,27 +27,27 @@ const loginAccess = [
 function Login() {
 	return (
 		<div className='min-h-screen place-items-center grid items-start md:place-items-center bg-slate-100'>
-			<h2 className='self-center pt-4 text-blue-700 font-semibold text-lg md:text-xl'>
-				Login
-			</h2>
-			<ul className='self-start grid grid-cols-2  md:grid-cols-none md:grid-flow-col place-items-center gap-4'>
-				{loginAccess.map((loginAccess) => (
-					<li key={loginAccess.id} className='py-4'>
-						<a href={loginAccess.operation}>
-							<img
-								className='w-32 h-32 md:h-32 md:w-32 squater-full m-auto mb-4 hover:brightness-90 transition ease-in-out delay-100'
-								src={loginAccess.image}
-								alt=''
-							/>
-						</a>
-						<div>
-							<p className='font-semibold text-sm text-gray-900 text-center text-stone-700'>
-								{loginAccess.access}
-							</p>
-						</div>
-					</li>
-				))}
-			</ul>
+			<div>
+				<h2 className='self-center text-center pt-4 text-blue-700 font-semibold text-lg md:text-5xl mb-6'>
+					Login
+				</h2>
+				<ul className='self-start grid grid-cols-2  md:grid-cols-none md:grid-flow-col place-items-center gap-8'>
+					{loginAccess.map((loginAccess) => (
+						<li key={loginAccess.id} className='py-4'>
+							<a className='link-access' href={loginAccess.operation}>
+								<img
+									className='w-32 h-32 md:h-40 md:w-40 squater-full rounded hover:border-2 border-solid  border-blue-700 m-auto mb-4 hover:brightness-90 transition ease-in-out delay-100'
+									src={loginAccess.image}
+									alt=''
+								/>
+								<p className='font-semibold text-sm text-gray-900 text-center text-stone-700 transition ease-in'>
+									{loginAccess.access}
+								</p>
+							</a>
+						</li>
+					))}
+				</ul>
+			</div>
 		</div>
 	);
 }

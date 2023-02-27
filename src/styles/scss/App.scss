@@ -16,6 +16,14 @@
 	display: inline-block;
 }
 
+.link-access:hover > img {
+	border: solid 2px #0e7490;
+}
+
+.link-access:hover > p {
+	color: #0e7490;
+}
+
 .main-menu {
 	display: flex;
 	justify-content: end;
